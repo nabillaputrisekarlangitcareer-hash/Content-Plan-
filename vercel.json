@@ -1,0 +1,6 @@
+{
+  "functions": { "api/sync.js": { "includeFiles": "seed.json" } },
+  "headers": [
+    { "source": "/sw.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+  ]
+}

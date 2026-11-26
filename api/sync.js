@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { timingSafeEqual } from "node:crypto";
 
 const PATH = "content-plan/data.json";
-const KEY_RE = /^(konten|inspo|pengaturan)\/[A-Za-z0-9_.\-]{1,100}$/;
+const KEY_RE = /^(konten|inspo|pengaturan|blog)\/[A-Za-z0-9_.\-]{1,100}$/;
 
 function seed() {
   for (const p of ["seed.json", "../seed.json"]) {
